@@ -36,7 +36,7 @@ function getAllPaths(router) {
   const paths = [];
 
   Docsify.dom
-    .findAll('.sidebar-nav a:not(.section-link):not([data-nosearch])')
+    .findAll('.sidebar-nav a:not(.section-link):not([data-nosearch]), .markdown-section a:not(.section-link):not([data-nosearch])')
     .forEach(node => {
       const href = node.href;
       const originHref = node.getAttribute('href');
